@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Utilisation, traitement et conservation des données Gmail par Stage Radar Mail Reader.">
+  <title>Confidentialité — Stage Radar Mail Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="./">Stage Radar <span>Mail Reader</span></a><nav aria-label="Navigation"><a href="./">Présentation</a><a href="privacy.html" aria-current="page">Confidentialité</a></nav></header>
+  <main>
+    <p class="eyebrow">TRANSPARENCE ET DONNÉES GOOGLE</p>
+    <h1>Politique de confidentialité</h1>
+    <p class="lead">Cette politique décrit l’installation personnelle de Stage Radar Mail Reader. Son propriétaire est aussi son utilisateur et son administrateur. Le service n’est pas proposé comme produit d’inscription publique.</p>
+    <section>
+      <h2>Données consultées et finalité</h2>
+      <p>Avec l’accord du propriétaire de chaque compte, l’application lit les messages Gmail : expéditeur, destinataires lorsque disponibles, objet, date, texte, identifiants de message et de conversation. Elle distingue les messages relatifs aux candidatures des autres emails et extrait les informations nécessaires au suivi : entreprise, poste, référence d’offre, confirmation, refus ou étape de recrutement.</p>
+      <p>Les messages peuvent donc être lus pour déterminer leur pertinence, même lorsqu’ils sont ensuite classés comme sans rapport avec une candidature. Le contenu des pièces jointes n’est pas téléchargé par ce lecteur Gmail.</p>
+    </section>
+    <section>
+      <h2>Autorisations et contrôle du compte</h2>
+      <p>L’accès Gmail repose uniquement sur <code>gmail.readonly</code>. Ce lecteur n’envoie, ne supprime, ne déplace et ne modifie aucun email. Les alertes propres à Stage Radar disposent d’un canal SMTP distinct.</p>
+      <p>Le propriétaire peut retirer son accord depuis les <a href="https://myaccount.google.com/connections">connexions du compte Google</a>. La révocation arrête les prochaines lectures, mais ne supprime pas automatiquement les données déjà enregistrées dans la base privée.</p>
+    </section>
+    <section>
+      <h2>Analyse par IA et destinataires techniques</h2>
+      <p>Le texte et les métadonnées nécessaires sont transmis à l’API Xiaomi MiMo pour l’analyse demandée par l’utilisateur. Ce traitement implique un fournisseur externe, selon les conditions de ce fournisseur. Les jetons OAuth Google et les autres secrets techniques ne sont pas envoyés au modèle.</p>
+      <p>La base privée est hébergée sur le serveur administré par le propriétaire. Les données de candidatures ne sont pas publiées sur ces pages ni dans leur dépôt source public. Elles ne sont pas revendues et l’application ne les utilise pas à des fins publicitaires ou pour entraîner un modèle d’IA généraliste.</p>
+      <p>L’utilisation et le transfert des informations provenant des API Google respectent la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, notamment les exigences <em>Limited Use</em>. Leur traitement est limité aux fonctionnalités de suivi personnel demandées par l’utilisateur.</p>
+    </section>
+    <section>
+      <h2>Conservation et suppression</h2>
+      <p>Les métadonnées, textes ou extraits normalisés utiles, classifications, associations et historiques sont conservés dans une base privée pour assurer le suivi de la campagne et éviter les doublons. L’installation ne prévoit pas de suppression automatique à échéance fixe.</p>
+      <p>Le propriétaire peut supprimer les données via l’administration de son serveur. La suppression doit également prendre en compte les sauvegardes qu’il conserve. Cette page publique ne propose pas de formulaire recevant des données privées.</p>
+    </section>
+    <section>
+      <h2>Sécurité et pages publiques</h2>
+      <p>L’interface et la base de suivi sont séparées de ce site informatif. Les secrets sont conservés hors du code source, avec des droits d’accès restreints. Ces pages n’intègrent ni outil publicitaire, ni formulaire, ni script de mesure d’audience. Leur hébergeur peut traiter les journaux HTTP nécessaires à son fonctionnement.</p>
+      <p>L’adresse d’assistance est présentée dans l’écran de consentement Google de l’application. Pour cette installation personnelle, l’utilisateur administrateur contrôle lui-même les paramètres et les données conservées.</p>
+    </section>
+    <section id="utilisation">
+      <h2>Informations d’utilisation</h2>
+      <p>Stage Radar est une aide personnelle à l’organisation, pas une source exhaustive ou infaillible. Les résultats produits par un modèle d’IA peuvent être incomplets ou erronés. Les messages originaux restent les références pour les refus, entretiens et autres décisions importantes.</p>
+      <p>Ces pages ne permettent ni de postuler, ni d’accéder à un compte, ni d’envoyer un email. Toute évolution des usages de données devra être accompagnée d’une mise à jour de cette information et, si nécessaire, d’un nouvel accord de l’utilisateur.</p>
+    </section>
+  </main>
+  <footer>Mise à jour : 16 octobre 2026 · <a href="./">Présentation de l’application</a></footer>
+</body>
+</html>
