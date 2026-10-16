@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Présentation de Stage Radar Mail Reader, un outil personnel de suivi des candidatures avec accès Gmail en lecture seule.">
+  <title>Stage Radar Mail Reader — Présentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="./">Stage Radar <span>Mail Reader</span></a><nav aria-label="Navigation"><a href="./" aria-current="page">Présentation</a><a href="privacy.html">Confidentialité</a></nav></header>
+  <main>
+    <p class="eyebrow">OUTIL PERSONNEL · INFORMATIONS PUBLIQUES</p>
+    <h1>Un suivi privé des candidatures.<br>Un accès Gmail en lecture seule.</h1>
+    <p class="lead">Stage Radar Mail Reader aide son propriétaire à retrouver les confirmations de candidature, les refus, les demandes complémentaires et les invitations à un entretien dans ses propres boîtes Gmail autorisées.</p>
+    <aside class="notice">Ces pages présentent l’application. Elles ne donnent accès à aucune boîte mail, candidature, conversation ni interface privée. Elles ne proposent pas d’inscription publique.</aside>
+    <section>
+      <h2>Pourquoi connecter Gmail ?</h2>
+      <p>Le suivi doit pouvoir distinguer les emails liés à une candidature des autres messages, identifier l’entreprise et le poste, puis rattacher les réponses à la bonne offre. Les comptes sont connectés individuellement par leur propriétaire avec OAuth Google.</p>
+      <p>L’autorisation demandée est <code>https://www.googleapis.com/auth/gmail.readonly</code>. Elle permet de lire les messages et leurs métadonnées, sans les envoyer, les supprimer, les déplacer ni les marquer comme lus.</p>
+    </section>
+    <section>
+      <h2>Comment les données sont utilisées</h2>
+      <ol>
+        <li>Les emails des comptes autorisés sont récupérés en lecture seule pour déterminer lesquels concernent le suivi de candidatures.</li>
+        <li>Le texte et les métadonnées nécessaires sont analysés, notamment via l’API Xiaomi MiMo, pour proposer une classification et une association à une offre.</li>
+        <li>Les résultats et l’historique utile sont enregistrés dans une base privée et consultables uniquement dans l’application privée du propriétaire.</li>
+      </ol>
+      <p>Les jetons OAuth Google ne sont jamais transmis au modèle d’IA. L’application n’entraîne pas de modèle sur les emails. Ses propres alertes utilisent un canal d’envoi distinct de l’autorisation Gmail en lecture seule.</p>
+    </section>
+    <section>
+      <h2>Le propriétaire garde le contrôle</h2>
+      <p>L’accès peut être révoqué dans les <a href="https://myaccount.google.com/connections">connexions du compte Google</a>. L’analyse automatique peut comporter des erreurs ; les décisions importantes doivent être vérifiées dans les messages sources.</p>
+      <p>Les usages, les destinataires techniques, la conservation et la suppression des données sont détaillés dans la <a href="privacy.html">politique de confidentialité</a>.</p>
+    </section>
+  </main>
+  <footer>Stage Radar Mail Reader · Installation personnelle · Mise à jour : 16 octobre 2026<br><a href="privacy.html">Confidentialité</a> · <a href="privacy.html#utilisation">Informations d’utilisation</a></footer>
+</body>
+</html>
